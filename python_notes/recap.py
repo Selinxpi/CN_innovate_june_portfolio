@@ -1,7 +1,7 @@
-# this is comment
-# and comments 
-# can be 
-# big
+# # this is comment
+# # and comments 
+# # can be 
+# # big
 
 import random
 
@@ -140,31 +140,6 @@ light_switch()
 light_switch()
 light_switch()
 
-#my cashmachine
-pin_number= 31014
-accnum=9999
-
-accnum=int(input("Enter Accnum: \n"))
-pin_number=int(input("Enter pin: \n"))
-amount=int(input("Enter amount: \n"))
-
-balance= 4000
-def cash_machine():
-    global pin_number
-    global balance
-    global accnum
-
-new_balance=balance-amount
-
-if pin_number==31014 and accnum==9999 and amount<=balance:
-    print("Your balance was {} ".format(balance))
-    print("Amount you want to withdrawl: {}".format(amount))
-    print("You balance NOW: {} ".format(new_balance))
-elif amount>=balance:
-    print("Chech the balance please!")
-else:
-    print("Wrong pin or accnum ,try 1 more time: ")
-
 fav_songs = [
     "Placebo - Happy Birthday in the Sky",
     "Korn - ADIDAS",
@@ -182,3 +157,37 @@ print(fav_songs)
 
 fav_songs.pop(0) #remove one you want to remove
 print(fav_songs)
+
+# For loops
+for i in fav_songs:
+    print(i)
+
+for i in range(10):
+    print(i)
+
+for i in range(2,10,2):
+    print(i)
+
+#start:stop:step
+for i in range(10,-1,-1):
+    print(i)
+
+num=0
+while num < 10:
+    num +=1
+    print(num)
+
+my_num = 7
+comp_num = random.randint(1,30)
+while my_num != comp_num:
+    print(f"The numbers {my_num} and {comp_num} do not match")
+    comp_num = random.randint(1,30)
+print(f"The number {my_num} and {comp_num} do match")
+
+#with input
+my_num = int(input("Please Enter Your Lucky NUMBER: "))
+comp_num = random.randint(1,30)
+while my_num != comp_num:
+    print(f"The numbers {my_num} and {comp_num} , you lose!")
+    comp_num = random.randint(1,30)
+print(f"The number {my_num} and {comp_num} YOU ARE THE WINNER!")
