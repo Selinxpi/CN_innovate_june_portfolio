@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+}
+
+#header{
+    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    border-style:double;
+}
+.page{    
+    font-size: 40px;
+    color: rgb(12, 2, 92);   
+}
+#about_me{
+    background-color: rgb(182, 231, 223);
+    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    border-style:double;
+}
+.list{
+    background-color: rgb(231, 193, 232);
+    font-size: 30px;
+    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    border-style:double
+}
+.game_text{
+    color: rgb(103, 10, 10);
+    background-color: bisque;
+}
+.photo1{
+    width: 100%;
+    height: 50em;
+}
+.photo2{
+    width: 100%;
+    height: 50em;
+}
+.photo3{
+    width: 100%;
+    height: 50em;
+}
+.photo4{
+    width: 100%;
+    height: 50em;
+}
+footer{
+    background-color: rgb(182, 231, 223);
+    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    border-style:double;
+    display:flex
+}
+.top_button{
+    width: 5%;
+}
