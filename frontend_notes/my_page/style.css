@@ -1,10 +1,11 @@
-body{
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 #header{
-    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    border: 1em solid rgba(21, 130, 16, 0.298);
+    background-image: url(/frontend_notes/img/image_processing20190910-11148-154jotf.gif);
     border-style:double;
+    text-align: center;
 }
 .page{    
     font-size: 40px;
@@ -14,16 +15,38 @@ body{
     background-color: rgb(182, 231, 223);
     border: 0.5em solid rgba(21, 130, 16, 0.298);
     border-style:double;
+    text-align: center;
+    font-family: 'Cairo';
+    font-size: 2em;
+    color: #110688;
+}
+
+#band-web{
+    text-align: center;
+    font-family: Rubik Moonrocks;
+    font-size: 30px;
+}
+.arrow{
+    width: 6em;
 }
 .list{
     background-color: rgb(231, 193, 232);
     font-size: 30px;
-    border: 0.5em solid rgba(21, 130, 16, 0.298);
-    border-style:double
+    font-family: Rubik Moonrocks;
+    border: 0.5em solid rgba(77, 8, 77, 0.298);
+    border-style:double;
+    /* text-align: center; */
+    height: 13em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.game_text{
+
+#game{
     color: rgb(103, 10, 10);
     background-color: bisque;
+    text-align: center;
 }
 .photo1{
     width: 100%;
@@ -42,11 +65,36 @@ body{
     height: 50em;
 }
 footer{
-    background-color: rgb(182, 231, 223);
-    border: 0.5em solid rgba(21, 130, 16, 0.298);
+    background-color: rgb(231, 211, 182);
+    border: 0.5em solid rgba(214, 126, 11, 0.767);
     border-style:double;
-    display:flex
+    /* display:flex; */
+    height: 10em;
 }
+
 .top_button{
-    width: 5%;
+    height: 4em;
+    width: 7em;
+    border-radius:1em;
+    background: rgb(119, 81, 63);
+    border-radius: 1.5em;
+    box-shadow: 0 0.7em 0.5em rgb(67, 40, 29);
+    color: rgb(238, 210, 196);
+    font-family:monospace;
+    font-size:x-large;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.top_button:hover{
+    background: linear-gradient(90deg,#DB6C3F,#F0E987,#D1E46A,#DB6C3F);
+    color: rgb(119, 81, 63);
+}
+.top_button:active{
+    box-shadow: 0 0.2em ;
+    transform: translateY(4px);
+}
+.copy{
+    text-align: center
 }
