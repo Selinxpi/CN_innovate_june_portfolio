@@ -8,6 +8,17 @@
     text-align: center;
     border-radius:1em;
 }
+.hello_mokoko{
+    height: 10em;
+    width: 10em;
+    margin-top: 2em;
+    border-radius: 6em;
+}
+.rock_mokoko{
+    width: 6em;
+    height: 6em;
+    margin-top: 1em;
+}
 .page{    
     font-size: 3em;
     color: rgb(12, 2, 92);   
@@ -58,7 +69,6 @@
 .TatooText{
     text-align: center;
     margin-top: 2em;
-    /* margin-bottom: 2em; */
     color: rgb(191, 190, 108);
     background-color: black;
     border: 0.2em solid rgb(191, 190, 108);
@@ -69,7 +79,6 @@
 }
 #Tattoo{
     display: flex;
-    /* width: 20em; */
     height: 50em;
     justify-content: center;
     color: rgb(191, 190, 108);
@@ -79,11 +88,32 @@
     justify-content: space-around;
     border-radius:1em;
 }
-#game{
-    color: rgb(103, 10, 10);
-    background-color: bisque;
-    text-align: center;
+.game_mokoko{
+    width: 15em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    border-radius: 8em;
 }
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px rgb(139, 243, 241), 0 0 30px #4c83f848, 0 0 40px #009de6, 0 0 50px #3103fd, 0 0 60px #00ccff, 0 0 70px #0839b7;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #1db28d, 0 0 40px #19c89f, 0 0 50px #0e8074, 0 0 60px #0b3295, 0 0 70px #085e1f, 0 0 80px #00f2ff;
+    }
+    }
+
+    #game, .TatooText{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    .game-text{
+        font-size: 3.5em;
+    }
+
 .photo1{
     width: 100%;
     height: 50em;
