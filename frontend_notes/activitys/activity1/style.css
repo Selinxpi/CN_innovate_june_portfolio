@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(216, 202, 185);
+}
+.desktop, .mobile{
+    display:none;
+}
+@media (orientation: portrait) {
+    .mobile{
+        display: inline-block;
+    }
+    body{
+        background-color: black;
+        color: bisque;
+    }
+}
+@media (orientation: landscape) {
+    .desktop{
+        display: inline-block;
+    }
+    
+}

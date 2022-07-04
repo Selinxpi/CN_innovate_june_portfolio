@@ -1,0 +1,35 @@
+.mob, .desctop, .Welcome{
+    display:none;
+}
+@media (orientation: portrait) {
+    .mob{
+        display: inline-block;
+        display:flex;
+        flex-direction: column;
+    }
+}
+.name-mob{
+/* display: flex; */
+background-color: rgb(180, 216, 235);
+width: 30em;
+}
+.name{
+    display: flex;
+    background-color: rgb(180, 216, 235);
+    width: 25em;
+    justify-content: center;
+}
+@media (orientation: landscape) {
+    .desctop,.Welcome{
+        display: inline-block;
+        display:flex;
+        justify-content: space-evenly;
+    }    
+}
+.img{
+    width: 15em;
+    margin-top: 3em;
+    margin-right: 1.5em;
+}
+
+
