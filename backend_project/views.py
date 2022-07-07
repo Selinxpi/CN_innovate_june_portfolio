@@ -22,6 +22,10 @@ def chatbot():
 def admin():
     return render_template("admin.html")
 
+@my_view.route('/jscods')
+def jscods():
+    return render_template("jscods.html")
+
 @my_view.route('/chat')
 @my_view.route('/bot')
 @my_view.route('/help')
