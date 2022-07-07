@@ -9,7 +9,8 @@
     <title>JavaScript Events</title>
 </head>
 
-<body onload="checkCookies()">
+
+<body onload="darkCheck(),checkCookies()">
     <nav>
         <button>
             <a href="{{ url_for('my_view.index')}}">Home Page</a>
@@ -34,7 +35,7 @@
     <div>
     <h1>JavaScript Events</h1>
     <div class="flex-container-h">
-        <button>Dark Mode</button>
+        <button onclick= darkMode(),checkCookies()>Dark Mode</button>
     </div>
     <h2>Innovate Coding</h2>
     <p id="intro-text">This is an interactive website for demonstrating a selection of events in JavaScript.</p>
